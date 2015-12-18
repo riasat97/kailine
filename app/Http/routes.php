@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('registration', [
+    'as'=>'register',
+    'uses'=>'UsersController@getRegister'
+]);
+
+Route::post('registration', [
+    'as'=>'register.post',
+    'uses'=>'UsersController@postRegister'
+]);
+

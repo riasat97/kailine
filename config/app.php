@@ -144,7 +144,12 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        /**
+         * third party
+         */
+        'Illuminate\Html\HtmlServiceProvider',
+        'Ktquez\Tinymce\TinymceServiceProvider',
+        'Laracasts\Flash\FlashServiceProvider'
     ],
 
     /*
@@ -193,6 +198,13 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        /**
+         * third party
+         */
+
+        'Form'=> 'Illuminate\Html\FormFacade',
+        'HTML'=> 'Illuminate\Html\HtmlFacade',
+        'Flash' => 'Laracasts\Flash\Flash'
 
     ],
 
