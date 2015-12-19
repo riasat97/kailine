@@ -1,7 +1,10 @@
 /*dark background to support form theme*/
-body {
-  background: url('../background.jpg');
-}
+html,body {
+background: url('../texture1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover; -moz-background-size: cover;
+    -o-background-size: cover; background-size: cover;
+    }
+
 
 /*sass variables used*/
 /*site container*/

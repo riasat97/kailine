@@ -21,3 +21,9 @@ Route::post('registration', [
     'uses'=>'UsersController@postRegister'
 ]);
 
+Route::get('participants',[
+    'as'=>'participants',
+    'uses'=>'UsersController@getParticipants'
+]);
+
+

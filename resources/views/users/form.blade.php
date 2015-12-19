@@ -25,4 +25,6 @@
     <p class="relation-help">Enter your Occupation description.</p>
 </div>
 
+{!! Form::file('image') !!}
+
 {!! Form::submit($submitButtonText, ['class' => 'submit']) !!}

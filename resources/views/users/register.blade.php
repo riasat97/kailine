@@ -20,7 +20,7 @@
     <h1>Register For An Account</h1>
     <p>To sign-up for a free basic account please provide us with some basic information using
         the contact form below. Please use valid credentials.</p>
-    {!! Form::model($user = new App\User ,['route' => 'register.post']) !!}
+    {!! Form::model($user = new App\User ,['route' => 'register.post','files'=>true]) !!}
 
     @include('users.form', ['submitButtonText' => 'Save'])
 
