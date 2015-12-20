@@ -26,4 +26,11 @@ Route::get('participants',[
     'uses'=>'UsersController@getParticipants'
 ]);
 
+Route::get('raffle-draws/lets-draw',[
+    'as'=>'raffle-draws.draw',
+    'uses'=>'RaffleDrawsController@getDrawResult'
+]);
+
+
+Route::resource('raffle-draws','RaffleDrawsController');
 
